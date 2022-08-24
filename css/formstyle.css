@@ -1,0 +1,144 @@
+@import url(main.css);
+h1 {
+  text-align: center;
+  padding-top: 5rem;
+}
+nav {
+  margin-top: -39px;
+}
+.in-up {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--defaultpadding);
+  grid-gap: 5rem;
+  justify-content: center;
+}
+.in-up > div {
+  background: white;
+  filter: drop-shadow(0px 5px 5px rgb(192, 192, 192));
+  width: 80%;
+  padding: 1rem 2rem;
+}
+input {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-family: var(--primaryfont);
+  width: 90%;
+  border: 1.5px solid rgb(187, 187, 187);
+  outline: none;
+  transition: 0.4s ease;
+}
+input:focus {
+  border: 1.5px solid rgb(88, 88, 88);
+  transition: 0.4s ease;
+}
+.in-up button {
+  margin-top: 20px;
+  padding: 8px 50px;
+  background: linear-gradient(to right, #ff6584, #ff8611);
+  border: none;
+  font-family: var(--primaryfont);
+  color: rgb(12, 12, 12, 0.5);
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+.in-up button:hover {
+  filter: opacity(80%);
+  transition: 0.3s ease;
+}
+a {
+  display: block;
+  font-size: 13px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+.btn-styles {
+  padding: var(--defaultpadding);
+}
+.btn {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: var(--text);
+}
+.btn button {
+  padding: 10px 20px;
+  font-family: var(--text);
+  font-weight: 600;
+  text-transform: lowercase;
+}
+.btn1 {
+  border: 2px solid rgb(53, 124, 255);
+  background: none;
+  color: rgb(53, 124, 255);
+  transition: 0.3s ease;
+}
+.btn1:hover {
+  background: rgb(53, 124, 255);
+  color: white;
+  transition: 0.3s ease;
+}
+.btn4 {
+  background: rgb(53, 198, 255);
+  border: 2px solid rgb(53, 198, 255) ;
+  color: rgb(8, 8, 8, 0.7);
+  transition: 0.3s ease;
+}
+.btn5 {
+  border: 2px solid rgb(53, 124, 255);
+  background: none;
+  color: rgb(53, 124, 255);
+  transition: 0.3s ease;
+}
+.btn5:hover {
+  transition: 0.3s ease;
+  transform: rotate(-180deg);
+}
+.btn4:hover {
+  transform: rotate(180deg);
+  filter: opacity(60%);
+}
+.btn2 {
+  background: rgb(255, 53, 53);
+  border: 2px solid rgb(255, 53, 53);
+  color: white;
+  transition: 0.3s ease;
+}
+.btn2:hover {
+  border: 2px solid rgb(255, 53, 53);
+  color: rgb(255, 53, 53);
+  background: none;
+  transition: 0.3s ease;
+}
+.btn button {
+  padding: 10px 20px;
+  font-family: var(--text);
+}
+.btn3 {
+  background: linear-gradient(to right, #6596ff, #a011ff);
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: lowercase;
+  transition: 0.3s ease;
+}
+.btn3:hover {
+  filter: opacity(80%);
+  transition: 0.3s ease;
+}
+@media (max-width: 500px) {
+  .in-up {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .in-up > div {
+    padding: 2rem 2rem;
+  }
+}
